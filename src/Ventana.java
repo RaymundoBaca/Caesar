@@ -59,6 +59,7 @@ public class Ventana extends javax.swing.JFrame {
 
         jTextArea2.setBackground(new java.awt.Color(204, 204, 204));
         jTextArea2.setColumns(20);
+        jTextArea2.setLineWrap(true);
         jTextArea2.setRows(5);
         jScrollPane2.setViewportView(jTextArea2);
 
@@ -99,6 +100,7 @@ public class Ventana extends javax.swing.JFrame {
 
         jTextArea1.setBackground(new java.awt.Color(204, 204, 204));
         jTextArea1.setColumns(20);
+        jTextArea1.setLineWrap(true);
         jTextArea1.setRows(5);
         jScrollPane3.setViewportView(jTextArea1);
 
@@ -123,7 +125,7 @@ public class Ventana extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        jTextArea2.setText(""); // Borra el contenido de jTextArea1
+        jTextArea2.setText(""); // Borra el contenido de jTextArea2
         //Obtiene el texto, convierte a minúsculas y lo almacena en cad
         String cad = jTextArea1.getText().toLowerCase();
         //Convertimos cad en un arreglo de caracteres
